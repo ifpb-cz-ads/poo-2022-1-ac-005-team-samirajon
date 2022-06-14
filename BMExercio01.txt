@@ -1,0 +1,18 @@
+modelo Lampada
+  início do modelo
+  dado marcaLâmpada, tipoLâmpada, voltagemLâmpada, estadoLâmpada;
+    // Inicializa simultaneamente todos os dados do modelo
+operação acendeLâmpada(estadoLâmpada)
+  início
+    estadoLâmpada = 'Acesa';
+  fim
+
+operação apagaLâmpada(estadoLâmpada)
+  início
+    estadoLâmpada = 'Apagada';
+  fim
+
+operação mostraEstado(estadoLâmpada)
+  início
+   imprime estadoLâmpada;
+  fim
