@@ -1,0 +1,21 @@
+modelo timeLoL
+  início do modelo 
+  dado nomeTime, modalidade, quantidadeJogadoresPrincipais, quantidadeReservas, pontuação, nomeJogadores, kill;
+
+operação posicionarJogadores(quantidadeJogadoresPrincipais)
+  início
+    se (quantidadeJogadoresPrincipais == 5)
+      imprime "Time pronto";
+    senão
+      substituirJogador()
+      início
+        quantidadeReservas--;
+      fim
+      imprime "Faltando jogador";
+  fim
+
+operação marcarPonto()
+  início
+    se (kill)
+      pontuação++;
+  fim
